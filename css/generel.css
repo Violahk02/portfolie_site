@@ -1,0 +1,107 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* baggrundsfarven på hele siden */
+body {
+  background-color: rgb(248, 248, 244);
+}
+
+/* Menu */
+
+header {
+  position: relative;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between; /* The space-between value displays the flex items with space between them: */
+  /* align-items: center; */
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.button-link {
+  text-decoration: none; /* Removes the underline */
+  font-family: Roboto slab;
+  font-weight: 300; /* font tykkelse */
+  color: black;
+  padding: 20px;
+}
+
+.button-link:hover {
+  font-family: Playfair Display SC;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}

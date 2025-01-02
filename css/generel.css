@@ -22,6 +22,8 @@ body {
 
 h1 {
   font-family: Playfair Display;
+  font-size: 2.5rem;
+  font-weight: 200;
 }
 
 h2 {
@@ -64,6 +66,7 @@ nav {
 .button-link {
   text-decoration: none; /* Removes the underline */
   font-family: Roboto slab;
+  font-size: 1.2rem;
   font-weight: 300; /* font tykkelse */
   color: black;
   padding: 20px;

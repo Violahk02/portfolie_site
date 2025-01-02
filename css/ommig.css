@@ -1,0 +1,38 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.ommig {
+  margin: 30px;
+}
+
+.grid_1-1 {
+  text-align: center;
+  h1 {
+    margin: 10px;
+  }
+  p {
+    margin: 15px;
+  }
+}
+
+.cv_intro {
+  text-align: center;
+  margin: 20px;
+}
+
+.horisontal_linje {
+  border: 0.5px solid;
+  width: 100%;
+}
+
+.vertikal_linje {
+  display: flex;
+  justify-items: center;
+  width: 2px;
+  height: 300px;
+  background-color: black;
+}

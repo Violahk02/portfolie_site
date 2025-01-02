@@ -1,0 +1,161 @@
+.flex {
+  margin: 20px;
+}
+
+/* Overlap af billeder */
+.billeder {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 35px;
+  margin-top: -24px;
+}
+
+.billeder img {
+  box-shadow: 2px 2px 2px rgb(149, 149, 149);
+  width: 100%;
+  height: auto;
+}
+
+.box1 {
+  z-index: 1;
+  margin-right: 50px;
+  margin-bottom: -215px;
+}
+
+.box2 {
+  z-index: 2;
+  margin-top: -215px;
+  margin-left: 50px;
+}
+
+.portraet {
+  z-index: 3;
+}
+
+.overskrift {
+  text-align: center;
+  h1 {
+    font-size: 3.5rem;
+    line-height: 85%;
+  }
+}
+
+.introduktion {
+  text-align: center;
+  margin-bottom: 40px;
+  h2 {
+    font-weight: 200;
+    margin: 10px;
+    color: rgb(123, 123, 97);
+  }
+}
+
+.flex_container {
+  text-align: center;
+  background-color: rgb(255, 251, 241);
+  padding: 20px;
+  h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+    font-weight: 400;
+    color: rgb(123, 123, 97);
+  }
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.knap {
+  background-color: rgb(123, 123, 97);
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 20px;
+  font-family: Roboto slab;
+  font-weight: 350;
+  color: rgb(255, 251, 241);
+  border: 2px solid;
+  text-decoration: none;
+}
+
+.knap:hover {
+  background-color: rgb(255, 251, 241);
+  color: rgb(123, 123, 97);
+}
+
+.pilned {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 800px) {
+  .flex_container {
+    display: flex;
+    justify-content: space-around; /* Sørger for at der er lige meget plads mellem kolonnerne */
+    .oversigt {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Sørger for at knappen placeres i bunden */
+      width: 30%; /*Justerer bredden af kolonnerne efter behov */
+    }
+  }
+
+  .flex {
+    margin-left: 15%;
+  }
+
+  .overskrift {
+    text-align: left;
+    h1 {
+      font-size: 9rem;
+      line-height: 85%;
+    }
+  }
+
+  .introduktion {
+    text-align: left;
+    margin-top: -21%;
+    margin-bottom: 8%;
+    h2 {
+      font-size: 2rem;
+      font-weight: 350;
+      color: rgb(123, 123, 97);
+    }
+    p {
+      width: 40ch;
+    }
+  }
+
+  .billeder {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 35px;
+    margin-top: -11%;
+  }
+
+  .billeder img {
+    box-shadow: 2px 2px 2px rgb(149, 149, 149);
+    width: 40%;
+    height: auto;
+  }
+
+  .box1 {
+    z-index: 1;
+    margin-right: -21%;
+    margin-bottom: -36%;
+  }
+
+  .box2 {
+    z-index: 2;
+    margin-top: -35%;
+    margin-left: 33%;
+  }
+
+  .portraet {
+    z-index: 3;
+    margin-right: -27%;
+    margin-top: 3%;
+  }
+}

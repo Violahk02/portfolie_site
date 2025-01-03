@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.projekt_intro {
+  text-align: center;
+  h1,
+  h2 {
+    margin: 15px;
+  }
+  h2 {
+    font-weight: 400;
+    color: rgb(123, 123, 97);
+  }
+  margin: 30px;
+}
+
+.box {
+  border: 1px solid;
+  height: 300px;
+}
+
+.temaer {
+  display: flex;
+}
+
+.t2,
+.t3,
+.t4 {
+  display: grid;
+  width: 30%;
+  img {
+    object-fit: cover;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: stretch;
+  }
+  h3 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    place-self: center center;
+    font-family: Playfair Display;
+    font-weight: 200;
+  }
+}
+
+.t5 {
+  display: grid;
+  width: 30%;
+  img {
+    object-fit: cover;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: stretch;
+  }
+  h3 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    place-self: center center;
+    font-family: Playfair Display;
+    font-weight: 200;
+    color: rgb(255, 251, 241);
+  }
+}

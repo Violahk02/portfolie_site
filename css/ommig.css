@@ -17,6 +17,9 @@
   p {
     margin: 15px;
   }
+  img {
+    width: 80%;
+  }
 }
 
 .cv_intro {
@@ -70,7 +73,7 @@
 }
 
 /* Info om job, styling af fonte, placering og knap */
-.flex_container {
+.grid_1-1-1 {
   text-align: center;
   background-color: rgb(255, 251, 241);
   padding: 20px;
@@ -81,6 +84,7 @@
     color: rgb(123, 123, 97);
   }
   border-top: 1px solid;
+  border-bottom: 1px solid;
 }
 
 .knap {
@@ -101,25 +105,48 @@
   color: rgb(123, 123, 97);
 }
 
-.mineprojekter {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(255, 251, 241);
-  border-bottom: 1px solid;
-  margin-top: -4%;
-}
-
 @media only screen and (min-width: 800px) {
-  .flex_container {
-    display: flex;
-    justify-content: space-around; /* Sørger for at der er lige meget plads mellem kolonnerne */
+  .ommig {
+    margin: 8%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 30px;
+  }
+
+  .grid_1-1 {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    order: -1;
+    img {
+      width: 60%;
+    }
+  }
+
+  .order {
+    order: -1;
+  }
+
+  .cv_intro {
+    text-align: center;
+    p {
+      margin: 20px auto; /* Auto margin for at centrere */
+      max-width: 60ch;
+    }
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     .oversigt {
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-
-      width: 30%; /*Justerer bredden af kolonnerne efter behov */
     }
+  }
+
+  .mineprojekter {
+    grid-column: 2;
   }
 }
 /* .start_cirkel {

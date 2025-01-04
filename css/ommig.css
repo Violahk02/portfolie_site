@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  border-radius: 20px;
+}
+
 .ommig {
   margin: 30px;
 }
@@ -115,13 +119,17 @@
     margin: 30px;
   }
 
-  .grid_1-1 {
+  .flex_box {
     text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    order: -1;
+    display: flex;
+    justify-content: center;
+    p {
+      width: 50ch;
+      margin: 50px;
+    }
     img {
-      width: 60%;
+      width: 70%;
+      margin-left: 50px;
     }
   }
 

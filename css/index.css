@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  border-radius: 20px;
+}
+
 .flex {
   margin: 20px;
 }
@@ -59,7 +63,7 @@
   }
 }
 
-.flex_container {
+.grid_1-1-1 {
   text-align: center;
   background-color: rgb(255, 251, 241);
   padding: 20px;
@@ -97,15 +101,11 @@
 }
 
 @media only screen and (min-width: 800px) {
-  .flex_container {
-    display: flex;
-    justify-content: space-around; /* Sørger for at der er lige meget plads mellem kolonnerne */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     .oversigt {
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Sørger for at knappen placeres i bunden */
-      width: 30%; /*Justerer bredden af kolonnerne efter behov */
     }
   }
 

@@ -164,7 +164,6 @@ video {
   height: auto;
   background-color: rgb(123, 123, 97);
   padding: 30px;
-
   p,
   h3 {
     margin: 20px;
@@ -187,7 +186,6 @@ video {
   }
   p {
     text-align: center;
-
     margin: 20px auto; /* Auto margin for at centrere */
     border-bottom: 1px solid;
     padding: 20px;

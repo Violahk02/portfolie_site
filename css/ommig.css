@@ -84,6 +84,18 @@ img {
   color: rgb(123, 123, 97);
 }
 
+.tidslinje {
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 100%;
+    aspect-ratio: 758/879;
+    width: 90%;
+    margin: 20px;
+    margin-left: 17%;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .ommig {
     margin-left: 5%;
@@ -149,6 +161,18 @@ img {
       p {
         font-size: 1.1rem;
       }
+    }
+  }
+
+  .tidslinje {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 100%;
+      aspect-ratio: 758/879;
+      width: 50%;
+      margin: 50px;
+      margin-left: 12%;
     }
   }
 }

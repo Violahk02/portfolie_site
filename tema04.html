@@ -70,7 +70,93 @@
       <div class="box4">
         <div class="tema_intro">
           <h2>Grundlæggende Animation</h2>
+          <p>I dette tema blev vi introduceret til Javascript, som er med til at skabe mere dynamiske websites, css animationer og hvordan man rentegner i adobe illustrator.</p>
         </div>
+        <div class="grid_1-1">
+          <div>
+            <h3>Opgave & Idé</h3>
+            <p>I dette tema skulle vi lave en side om et valgfrit emne og anvende metoder og værktøjer til research, design og test af en digital prototype.</p>
+            <p>I dette tema skulle vi udvikle et animationsspil med enten dropdown-elementer eller elementer, der fløj ind fra siden, ved hjælp af JavaScript og CSS-animationer.</p>
+            <p>Til idéudviklingen brugte jeg cross-metoden, hvor jeg i undervisningen skabte 6 idéer baseret på en ordliste med verber, settings og objekter. Ved at kombinere tre ord formede jeg forskellige koncepter og valgte én idé at arbejde videre med.</p>
+            <p>De udvalgte ord: Gribe, på en mark, vindruer.</p>
+            <p>Idé: Vindruerne er blevet levende, og vinavleren må gribe dem på sin mark. Spillet foregår i Italien på en vingård, hvor gæster ankommer, og vinavleren skal samle vindruerne.</p>
+          </div>
+          <div class="video_mockup">
+            <video autoplay="" loop="" muted="" src="video_mockups/mockup_tema4.mp4"></video>
+            <div class="side_knap">
+              <a href="https://vhkdesign.dk/kea/04_animation/website/index.html" class="knap">Se siden og spillet her </a>
+            </div>
+          </div>
+        </div>
+        <h3>Design</h3>
+        <div class="grid_1-1">
+          <div>
+            <p>I design processen, startede vi ud med at lave en paper prototype, hvor man hurtigt laver en skitsering af hvordan man vil have spillet til at se ud, og hvilke funktioner/animationer man vil have med. <a href="https://youtu.be/v7NtWiiABZA?si=bmqHYc7HSdEttUsS">Du kan se den her!</a></p>
+            <p>Herefter kom jeg på 3 værdiord som spillet skulle associeres til - Natur, Idyllisk, ungt/festligt.</p>
+            <p>Ud fra disse lavede jeg to moodboards, et der gav inspirationen til lokationen, altså naturen og vinmarker, og et andet med elementerne, som vindruer, vinflasker mm.</p>
+          </div>
+          <div>
+            <p>Min stilreference blev baseret på flat design med et cartoon-lignende der look kombinerer enkelhed og farverigt udtryk. Stilen bruger rene linjer, geometriske former og flade, mættede farver uden gradienter.</p>
+            <p>Herefter var det ellers bare i gang med at skitsere mine figur og UI-elementer, og baggrunde.</p>
+            <p>Når det var gjort lærte jeg hvordan man rentegnede sine skitser i adobe illustrator, ved hjælp af pentool og hvordan man herefter downloade dem som svg’er.</p>
+          </div>
+        </div>
+        <h3>Scroll her, og se mine skitser fra start til rentegning i illustrator</h3>
+        <div class="scroll_container">
+          <img src="billeder.tmp/billeder_t4/luigi_skitse_resultat-kopi.webp" alt="skitse" />
+          <img src="billeder.tmp/billeder_t4/godtelement_skitse_resultat-kopi.webp" alt="skitse" />
+          <img src="billeder.tmp/billeder_t4/toender_skitse_resultat-kopi.webp" alt="skitse" />
+          <img src="billeder.tmp/billeder_t4/dårligelement_skitse_resultat-kopi.webp" alt="skitse" />
+          <img src="billeder.tmp/billeder_t4/forside-forgrund2_resultat-kopi.webp" alt="skitse" />
+          <img src="billeder.tmp/billeder_t4/baggrund_skitse_resultat-kopi.webp" alt="skitse" />
+          <img src="billeder.tmp/billeder_t4/startluigi_forgrund-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/purple_grape-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/green_grape-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/wine_bottle-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/wine_glas-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/spil_baggrund2-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/levelcomplete-kopi.svg" alt="svg" />
+          <img src="billeder.tmp/billeder_t4/gameover-kopi.svg" alt="svg" />
+        </div>
+        <h3>Aktivitets -og statemachine diagrammer.</h3>
+        <div class="grid_1-1">
+          <div>
+            <p>Når vi havde designet vores spil, skulle vi i gang med at lave et aktivitetsdiagram. Som beskriver de aktiviteter der sker i spillet bestående af detaljerede handlinger og beslutninger i en bestemt rækkefølge, men som nødvendigvis ikke altid er det samme der sker, hver gang aktiviteten udføres.</p>
+            <p>Her kan man bl.a. se at spillet består af gode og dårlige elementer, og hvad der sker når man klikker på den ene eller den anden.</p>
+          </div>
+          <div>
+            <p>Inden vi skulle i gang med at kode javascript, lavede vi også et statemachine diagram. Som minder meget om aktivitetsdiagrammet, men er endnu mere detaljerede, og har flere funktioner.</p>
+            <p>Her kan man se at der er kommet flere detaljer på. Man kan også se statemachine diagrammet som en slags skabelon, for hvilke funktioner og events man skal lave i sin javascript.</p>
+          </div>
+          <div class="grid_1-1">
+            <img src="billeder.tmp/billeder_t4/aktivitetsdiagram_resultat-kopi.webp" alt="aktivitetsdiagram" />
+          </div>
+          <div>
+            <img src="billeder.tmp/billeder_t4/statemachineluigi_resultat-kopi.webp" alt="statemachinediagram" />
+          </div>
+        </div>
+        <div class="grid_1-1">
+          <div>
+            <h3>Kode</h3>
+            <p>I spillets html struktur, var der ikke noget indhold, andet en en masse div’er, med diverse id’er. Dette gjorde man, da alle spilelementer, UI-elementer, og baggrunde, blev lagt ind som background-image i css’en.</p>
+            <p>Derudover blev vi også introduceret til css-animationer, hvor vi bl.a. brugte rotate, scale og translate, til at gøre vores spilelementer dynamiske.</p>
+            <p>I javascripten tager vi så fat i både id’erne og animationerne, så vi kan få tingene til at ske på bestemte tidspunkter, når man gør en bestemt handling. Her bliver der bl.a. brugt, funktioner, metoder (addClass, removeClass), variabler, events(load , click, animationend, animationiteration), betingelser(if-else) og math.random.</p>
+          </div>
+          <div class="grid_1-1">
+            <div class="kode2">
+              <div>
+                <img src="billeder.tmp/billeder_t4/id'er_resultat.webp" alt="id'er" />
+                <img src="billeder.tmp/billeder_t4/background-image_resultat.webp" alt="background-image" />
+              </div>
+            </div>
+            <div>
+              <img src="billeder.tmp/billeder_t4/rotation_resultat.webp" alt="rotation" />
+            </div>
+          </div>
+        </div>
+        <h3>Hvad har jeg lært?</h3>
+        <p>I dette tema, har jeg lært at skitsere, samt rentegne det i illustrator. Jeg har lært at idé genererer ud fra en ordliste, baseret på verber, settings og objekter.</p>
+        <p>Jeg har lært at kode i javascript, ud fra aktivitets -og statemachine diagram. Samt lave css positionering og animation, for at placere og give spillet bevægelse.</p>
       </div>
       <footer>
         <a href="www.linkedin.com/in/viola-holm-knudsen-0602ba239"><img src="billeder.tmp/linkedin.svg" alt="linkedin" /></a>

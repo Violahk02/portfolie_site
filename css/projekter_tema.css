@@ -151,6 +151,14 @@ video {
   }
 }
 
+.scroll_container {
+  display: flex;
+  gap: 50px;
+  overflow: auto;
+  width: 415px;
+  height: 320px;
+}
+
 .box5 {
   border: 1px solid;
   height: auto;
@@ -305,6 +313,20 @@ video {
   }
 
   /* TEMA 04 STYLING I WEB */
+
+  .scroll_container {
+    display: flex;
+    gap: 50px;
+    overflow: auto;
+    width: 1200px;
+    height: 320px;
+  }
+
+  .kode2 {
+    gap: 10px;
+    margin-right: 10px;
+  }
+
   /* TEMA 05 STYLING I WEB */
   .tema5_intro {
     h2 {

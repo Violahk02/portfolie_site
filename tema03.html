@@ -68,7 +68,7 @@
         </a>
       </div>
       <div class="box3">
-        <div class="ux_intro">
+        <div class="tema_intro">
           <h2>Grundlæggende UX/UI</h2>
           <p>I dette tema blev vi introduceret til vigtigheden af, hvordan brugere interagerer med brugergrænseflader. Vi lærte om de metoder, teorier og værktøjer, der kan anvendes til at skabe produkter baseret på faktiske observationer frem for personlige meninger og skøn.</p>
         </div>
@@ -80,36 +80,61 @@
             <p>Jeg brainstormede emner, jeg interesserede mig for, og som jeg mente manglede. Mine ideer inkluderede DIY-projekter, en social community site og en Copenhagen guide til vintage butikker eller caféer og restauranter.</p>
             <p>Som madentusiast valgte jeg at fokusere på en guide til caféer og restauranter i København, da jeg savnede et specifikt sted til at finde inspiration og information om byens madsteder.</p>
           </div>
-        </div>
-        <div class="grid_1-1">
-          <div>
-            <h3>Research</h3>
-            <p>I min research definerede jeg en primær og sekundær målgruppe: madentusiaster, turister, lokale beboere og madbloggere. Jeg lavede user stories som fx:</p>
-            <p>"Som madentusiast vil jeg kunne læse anmeldelser fra andre brugere, så jeg kan finde de bedste madoplevelser i byen."</p>
-            <p>Efter at have defineret brugertyperne undersøgte jeg eksisterende formidling af emnet. Jeg fandt top 10/20 lister over spisesteder og rejseguides til København, men ingen side dedikeret udelukkende til caféer og restauranter i byen.</p>
-            <p>Formålet med mit site blev at tilbyde en platform, hvor brugerne kan udforske og finde caféer og restauranter i København, "like" steder de vil besøge, rate besøgte steder, og oprette mapper for at gruppere ønskede besøg, fx asiatiske spisesteder.</p>
+          <div class="video_mockup">
+            <video autoplay="" loop="" muted="" src="video_mockups/mockup_tema3.mp4"></video>
+            <div class="side_knap">
+            <a href="http://vhkdesign.dk/kea/03_ux/01_kodet_site/index.html" class="knap">Se siden her </a>
           </div>
-        </div>
-        <div class="grid_1-1">
-          <div>
-            <h3>Design</h3>
-            <p>I designprocessen kom jeg på tre værdiord, jeg gerne ville have min side skulle associeres med. Disse lød på venligt/imødekommende, elegant og mainstream.</p>
-            <p>Herefter lavede jeg to moodboards, ud fra ordene og derefter tre styletiles, som jeg så lavede en likert test af, for at finde ud af hvad der fungerede godt og mindre godt.</p>
-            <p>Derefter gik jeg igang med at lave en lofi og hifi prototype, som jeg gjorde klikbart for at teste siden af, før jeg startede med at kode.</p>
           </div>
-          <div class="order">
-            <div class="grid_1-1">
-              <img src="billeder.tmp/styleux_resultat.webp" alt="styletile1" />
-              <img src="billeder.tmp/styletileux2_resultat.webp" alt="styletile2" />
+          
+          </div>
+          
+            <div class="research">
+              <h3>Research</h3>
+              <p>I min research definerede jeg en primær og sekundær målgruppe: madentusiaster, turister, lokale beboere og madbloggere. Jeg lavede user stories som fx:</p>
+              <p>"Som madentusiast vil jeg kunne læse anmeldelser fra andre brugere, så jeg kan finde de bedste madoplevelser i byen."</p>
+              <p>Efter at have defineret brugertyperne undersøgte jeg eksisterende formidling af emnet. Jeg fandt top 10/20 lister over spisesteder og rejseguides til København, men ingen side dedikeret udelukkende til caféer og restauranter i byen.</p>
+              <p>Formålet med mit site blev at tilbyde en platform, hvor brugerne kan udforske og finde caféer og restauranter i København, "like" steder de vil besøge, rate besøgte steder, og oprette mapper for at gruppere ønskede besøg, fx asiatiske spisesteder.</p>
             </div>
-            <div class="st3_h3">
-              <h3>Endelig styletile</h3>
+         
+          <div class="grid_1-1">
+            <div>
+              <h3>Design</h3>
+              <p>I designprocessen kom jeg på tre værdiord, jeg gerne ville have min side skulle associeres med. Disse lød på venligt/imødekommende, elegant og mainstream.</p>
+              <p>Herefter lavede jeg to moodboards, ud fra ordene og derefter tre styletiles, som jeg så lavede en likert test af, for at finde ud af hvad der fungerede godt og mindre godt.</p>
+              <p>Derefter gik jeg igang med at lave en lofi og hifi prototype, som jeg gjorde klikbart for at teste siden af, før jeg startede med at kode.</p>
             </div>
-            <div class="styletile3">
-              <img src="billeder.tmp/styletileux3_resultat.webp" alt="styletile3" />
+            <div class="order">
+              <div class="grid_1-1">
+                <img src="billeder.tmp/styleux_resultat.webp" alt="styletile1" />
+                <img src="billeder.tmp/styletileux2_resultat.webp" alt="styletile2" />
+              </div>
+              <div class="st3_h3">
+                <h3>Endelig styletile</h3>
+              </div>
+              <div class="styletile3">
+                <img src="billeder.tmp/styletileux3_resultat.webp" alt="styletile3" />
+              </div>
             </div>
           </div>
+          <div class="grid_1-1">
+            <div>
+              <h3>Kode</h3>
+              <p>Inden jeg begyndte at kode, lavede jeg layoutdiagrammer for hver side for at få overblik over HTML-strukturen og klassenavne til div'er.</p>
+            <p>Jeg opdagede, at oversigtssiderne for restauranter og caféer bedst blev opsat med column-count for et naturligt flow i kolonnerne, i stedet for et grid layout, som jeg først havde overvejet. Dette kaldes et masonry layout.</p>
+            <p>Jeg lærte også at implementere en horisontal scrollefunktion ved hjælp af display: flex og overflow: auto. Dette blev brugt til madkategorier og billedgallerier på café- og restaurantsiderne.</p>
+          </div>
+          <div class="grid_1-1 kode">
+            <img src="billeder.tmp/masonry_t3_resultat.webp" alt="masonry">
+            <img src="billeder.tmp/scrollcontainer_t3_resultat.webp" alt="scrolle">
+          </div>
+          </div>
+          <h3>Hvad har jeg lært?</h3>
+          <p>Igennem dette tema, har jeg lært forskellige metoder og test, som jeg kan bruge som dataindsamling i både min research fase, men også under design fasen, til efter man har kodet. Herunder lave, user stories, tænke højt test, 5-second test, og lighthouse test. </p>
+<p>Jeg har lavet moodboards, udarbejdet styletiles og lært at lave en digital prototype klikbart i figma, så jeg kan lave test ift brugervenlighed, før jeg begynder at kode.  </p>
+
         </div>
+        
       </div>
       <footer>
         <a href="www.linkedin.com/in/viola-holm-knudsen-0602ba239"><img src="billeder.tmp/linkedin.svg" alt="linkedin" /></a>

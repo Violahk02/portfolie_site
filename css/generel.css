@@ -144,5 +144,6 @@ footer {
   color: rgb(255, 251, 241);
   p {
     font-weight: 350;
+    padding: 5px;
   }
 }

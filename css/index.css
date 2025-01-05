@@ -36,12 +36,13 @@ img {
 
 .box2 {
   z-index: 2;
-  margin-top: -215px;
+  margin-top: -275px;
   margin-left: 50px;
 }
 
 .portraet {
   z-index: 3;
+  margin-top: -60px;
 }
 
 .overskrift {
@@ -95,9 +96,21 @@ img {
   color: rgb(123, 123, 97);
 }
 
-.pilned {
+.pil_box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-right: 16%;
+  margin-top: -5%;
+}
+
+.pilned:hover {
+  transform: scale(1.3);
+}
+
+/* Scroll ved klik af pil ned knap */
+:root {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 800px) {
@@ -106,6 +119,9 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     .oversigt {
       padding: 20px;
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 
@@ -131,7 +147,8 @@ img {
       color: rgb(123, 123, 97);
     }
     p {
-      width: 40ch;
+      width: 35ch;
+      font-size: 1.1rem;
     }
   }
 

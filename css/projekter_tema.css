@@ -17,6 +17,13 @@
   margin: 30px;
 }
 
+.tema_intro {
+  border-bottom: 1px solid;
+  p {
+    text-align: center;
+  }
+}
+
 .box {
   border: 1px solid;
   height: 300px;
@@ -65,9 +72,28 @@
   }
 }
 
+.t2:hover {
+  transform: translateY(-20%);
+}
+.t3:hover {
+  transform: translateY(-20%);
+}
+.t4:hover {
+  transform: translateY(-20%);
+}
+.t5:hover {
+  transform: translateY(-20%);
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+.side_knap {
+  display: flex;
+  justify-content: center;
+  margin-top: -15%;
 }
 
 .knap {
@@ -157,6 +183,7 @@ video {
   overflow: auto;
   width: 415px;
   height: 320px;
+  margin-bottom: 50px;
 }
 
 .box5 {
@@ -214,6 +241,10 @@ video {
     }
   }
 
+  .tema_intro {
+    border-bottom: none;
+  }
+
   /* TEMA BOKSE, TEKST OVENPÅ BILLEDE */
   .t2,
   .t3,
@@ -259,10 +290,13 @@ video {
   .side_knap {
     display: flex;
     justify-content: center;
-    margin-top: -100px;
   }
 
   /* TEMA 03 STYLING I WEB */
+
+  .h3_margin {
+    margin-left: 16px;
+  }
 
   video {
     max-width: 100%;

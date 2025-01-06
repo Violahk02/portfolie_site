@@ -48,7 +48,7 @@ img {
 .overskrift {
   text-align: center;
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 85%;
     font-weight: 700;
   }
@@ -99,7 +99,7 @@ img {
 .pil_box {
   display: flex;
   justify-content: center;
-  margin-right: 16%;
+
   margin-top: -5%;
 }
 
@@ -182,5 +182,27 @@ img {
     z-index: 3;
     margin-right: -27%;
     margin-top: 3%;
+  }
+
+  .pil_box {
+    display: flex;
+    justify-content: center;
+    margin-right: 16%;
+    margin-top: -5%;
+  }
+
+  .oversigt {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 10px;
+    }
+  }
+
+  .oversigt :last-child {
+    margin-top: auto;
+  }
+  .knap {
+    margin-top: 10px;
   }
 }

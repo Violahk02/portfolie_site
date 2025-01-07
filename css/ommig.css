@@ -13,23 +13,23 @@
   text-align: center;
 }
 
-.overskrift2 {
-  h2 {
-    font-weight: 300;
-  }
+.overskrift2 h2 {
+  font-weight: 300;
 }
 
 .grid_1-1 {
   text-align: center;
-  p {
-    margin: 20px;
-  }
-  img {
-    width: 80%;
-    aspect-ratio: 356/407;
-    margin: 20px;
-    border-radius: 20px;
-  }
+}
+
+.grid_1-1 p {
+  margin: 20px;
+}
+
+.grid_1-1 img {
+  width: 80%;
+  aspect-ratio: 0.8746928747;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .cv_intro {
@@ -42,55 +42,55 @@
   width: 100%;
 }
 
-.tidslinje_container {
-  p {
-    font-size: 1.2rem;
-  }
+.tidslinje_container p {
+  font-size: 1.2rem;
 }
 
 /* Info om job, styling af fonte, placering og knap */
 .grid_1-1-1 {
   text-align: center;
-  background-color: rgb(255, 251, 241);
+  background-color: #fffbf1;
   padding: 20px;
-  h3 {
-    font-size: 1.5rem;
-    margin: 10px;
-    font-weight: 400;
-    color: rgb(123, 123, 97);
-  }
   border-top: 1px solid;
   border-bottom: 1px solid;
 }
 
+.grid_1-1-1 h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+  font-weight: 400;
+  color: #7b7b61;
+}
+
 .knap {
-  background-color: rgb(123, 123, 97);
+  background-color: #7b7b61;
   padding: 10px;
   border-radius: 20px;
   display: inline-block;
   margin: 20px;
   font-family: Roboto slab;
   font-weight: 350;
-  color: rgb(255, 251, 241);
+  color: #fffbf1;
   border: 2px solid;
   text-decoration: none;
 }
 
 .knap:hover {
-  background-color: rgb(255, 251, 241);
-  color: rgb(123, 123, 97);
+  background-color: #fffbf1;
+  color: #7b7b61;
 }
 
 .tidslinje {
   display: flex;
   justify-content: center;
-  img {
-    max-width: 100%;
-    aspect-ratio: 758/879;
-    width: 90%;
-    margin: 20px;
-    margin-left: 17%;
-  }
+}
+
+.tidslinje img {
+  max-width: 100%;
+  aspect-ratio: 758/879;
+  width: 90%;
+  margin: 20px;
+  margin-left: 17%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -108,21 +108,21 @@
   .mineprojekter {
     grid-column: 2;
   }
+
   .overskrift {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
-    h1 {
-      font-size: 3.5rem;
-    }
   }
 
-  .overskrift2 {
-    h2 {
-      margin-left: 50px;
-      font-weight: 300;
-      font-size: 2rem;
-    }
+  .overskrift h1 {
+    font-size: 3.5rem;
+  }
+
+  .overskrift2 h2 {
+    margin-left: 50px;
+    font-weight: 300;
+    font-size: 2rem;
   }
 
   .grid_1-1 {
@@ -130,17 +130,18 @@
     grid-template-columns: 1fr 1fr;
     text-align: left;
     margin-bottom: 8%;
+  }
 
-    p {
-      width: 45ch;
-      margin: 30px;
-      font-size: 1.2rem;
-    }
-    img {
-      width: 70%;
-      aspect-ratio: 356/407;
-      margin-left: 50px;
-    }
+  .grid_1-1 p {
+    width: 45ch;
+    margin: 30px;
+    font-size: 1.2rem;
+  }
+
+  .grid_1-1 img {
+    width: 70%;
+    aspect-ratio: 0.8746928747;
+    margin-left: 50px;
   }
 
   .order {
@@ -149,33 +150,38 @@
 
   .cv_intro {
     text-align: center;
-    p {
-      margin: 20px auto; /* Auto margin for at centrere */
-      max-width: 60ch;
-      font-size: 1.2rem;
-    }
+  }
+
+  .cv_intro p {
+    margin: 20px auto;
+    /* Auto margin for at centrere */
+    max-width: 60ch;
+    font-size: 1.2rem;
   }
 
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    .oversigt {
-      padding: 20px;
-      p {
-        font-size: 1.1rem;
-      }
-    }
+  }
+
+  .grid_1-1-1 .oversigt {
+    padding: 20px;
+  }
+
+  .grid_1-1-1 .oversigt p {
+    font-size: 1.1rem;
   }
 
   .tidslinje {
     display: flex;
     justify-content: center;
-    img {
-      max-width: 100%;
-      aspect-ratio: 758/879;
-      width: 50%;
-      margin: 50px;
-      margin-left: 12%;
-    }
+  }
+
+  .tidslinje img {
+    max-width: 100%;
+    aspect-ratio: 0.8623435722;
+    width: 50%;
+    margin: 50px;
+    margin-left: 12%;
   }
 }

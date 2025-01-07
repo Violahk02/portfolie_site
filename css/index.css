@@ -5,45 +5,40 @@
   box-sizing: border-box;
 }
 
-.flex {
+.grid_1-1 {
   margin: 20px;
+  margin-top: -8%;
 }
 
 /* Overlap af billeder */
 .billeder {
+  width: 100%;
+  aspect-ratio: 1/1;
   display: grid;
-  justify-items: center;
-  align-items: center;
-  margin: 35px;
-  margin-top: -24px;
 }
 
 .billeder img {
   box-shadow: 2px 2px 2px rgb(149, 149, 149);
-  width: 100%;
-  height: auto;
   border-radius: 20px;
-}
-
-.box1 {
-  z-index: 1;
-  margin-right: 50px;
-  margin-bottom: -215px;
-}
-
-.box2 {
-  z-index: 2;
-  margin-top: -275px;
-  margin-left: 50px;
+  max-width: 90%;
+  object-fit: cover;
+  align-self: strecht;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .portraet {
-  z-index: 3;
-  margin-top: -60px;
+  place-self: center center;
+  z-index: 2;
+}
+
+.box2 {
+  place-self: end end;
 }
 
 .overskrift {
   text-align: center;
+
   h1 {
     font-size: 4rem;
     line-height: 85%;
@@ -96,8 +91,7 @@
 .pil_box {
   display: flex;
   justify-content: center;
-
-  margin-top: -5%;
+  margin-bottom: 20px;
 }
 
 .pilned:hover {
@@ -152,22 +146,25 @@
     }
   }
 
-  .flex {
-    margin-left: 15%;
-  }
-
   .overskrift {
-    text-align: left;
+    text-align: center;
     h1 {
       font-size: 9rem;
       line-height: 85%;
     }
   }
 
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7%;
+  }
+
   .introduktion {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: end;
     text-align: left;
-    margin-top: -21%;
-    margin-bottom: 8%;
     h2 {
       font-size: 2rem;
       font-weight: 350;
@@ -179,43 +176,37 @@
     }
   }
 
+  /* overlap af billeder */
   .billeder {
+    width: 75%;
+    aspect-ratio: 1/1;
+    grid-column: 2;
     display: grid;
-    justify-items: center;
-    align-items: center;
-    margin: 35px;
-    margin-top: -11%;
   }
 
   .billeder img {
     box-shadow: 2px 2px 2px rgb(149, 149, 149);
-    width: 40%;
-    height: auto;
-  }
-
-  .box1 {
-    z-index: 1;
-    margin-right: -21%;
-    margin-bottom: -36%;
-  }
-
-  .box2 {
-    z-index: 2;
-    margin-top: -35%;
-    margin-left: 33%;
+    border-radius: 20px;
+    max-width: 90%;
+    object-fit: cover;
+    align-self: strecht;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 
   .portraet {
-    z-index: 3;
-    margin-right: -27%;
-    margin-top: 3%;
+    place-self: center center;
+    z-index: 2;
+  }
+
+  .box2 {
+    place-self: end end;
   }
 
   .pil_box {
     display: flex;
     justify-content: center;
-    margin-right: 16%;
-    margin-top: -5%;
+    margin-bottom: 20px;
   }
 
   .oversigt {
